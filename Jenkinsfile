@@ -42,8 +42,7 @@
 				sh "mvn failsafe:integration-test failsafe:verify"
 			}
 		}
-	post 
-	{
+	post {
 		always {
 			echo 'Im awesome. I run always'
 		}
@@ -54,6 +53,5 @@
 			echo 'I run when you fail'
 		}
 	}
-	
 }
  }
