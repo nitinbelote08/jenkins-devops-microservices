@@ -1,13 +1,12 @@
 //SCRIPTED
 
 //DECLARATIVE
-piepline {
-	//agent any
-	agent {docker {image'maven:3.6.3'}}
+
+pipeline {
+	agent any
 	stages {
 		stage('build'){
 			steps{
-				sh 'mvn --version'
 				echo "Build"
 				
 			}
